@@ -50,8 +50,8 @@
             app:lottie_autoPlay="false"
             android:id="@+id/download"
             app:lottie_speed="1.25"
-            android:onClick="editClick"
-            app:lottie_fileName="edit.json"/>
+            android:onClick="downloadClick"
+            app:lottie_fileName="download.json"/>
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

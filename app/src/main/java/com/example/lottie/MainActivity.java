@@ -10,7 +10,7 @@ import com.airbnb.lottie.LottieAnimationView;
 public class MainActivity extends AppCompatActivity {
     private static final String TAG = "MainActivity";
 
-    LottieAnimationView bookark, edit, load;
+    LottieAnimationView bookark, edit, load, download;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,6 +20,7 @@ public class MainActivity extends AppCompatActivity {
         bookark = findViewById(R.id.book);
         edit = findViewById(R.id.edit);
         load = findViewById(R.id.load);
+        download = findViewById(R.id.download);
     }
 
     public void bookmarkClick(View view) {
@@ -39,5 +40,11 @@ public class MainActivity extends AppCompatActivity {
         load.pauseAnimation();
         load.playAnimation();
 
+    }
+
+    public void downloadClick(View view) {
+        download.setProgress(0);
+        download.pauseAnimation();
+        download.playAnimation();
     }
 }
