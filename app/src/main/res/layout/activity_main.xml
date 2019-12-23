@@ -20,10 +20,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.584">
 
-
-
-            app:lottie_fileName="download.json" />
-        <com.airbnb.lottie.LottieAnimationView
+           <com.airbnb.lottie.LottieAnimationView
             android:layout_height="100dp"
             android:layout_width="100dp"
             app:lottie_autoPlay="false"
@@ -37,13 +34,21 @@
             app:lottie_autoPlay="false"
             android:id="@+id/load"
             app:lottie_speed="1.25"
-            android:onClick="bookmarkClick"
+            android:onClick="loadClick"
             app:lottie_fileName="loading.json"/>
         <com.airbnb.lottie.LottieAnimationView
             android:layout_height="100dp"
             android:layout_width="100dp"
             app:lottie_autoPlay="false"
             android:id="@+id/edit"
+            app:lottie_speed="1.25"
+            android:onClick="editClick"
+            app:lottie_fileName="edit.json"/>
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_height="100dp"
+            android:layout_width="100dp"
+            app:lottie_autoPlay="false"
+            android:id="@+id/download"
             app:lottie_speed="1.25"
             android:onClick="editClick"
             app:lottie_fileName="edit.json"/>

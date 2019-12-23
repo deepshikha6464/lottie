@@ -19,6 +19,7 @@ public class MainActivity extends AppCompatActivity {
 
         bookark = findViewById(R.id.book);
         edit = findViewById(R.id.edit);
+        load = findViewById(R.id.load);
     }
 
     public void bookmarkClick(View view) {
@@ -33,4 +34,10 @@ public class MainActivity extends AppCompatActivity {
         edit.playAnimation();
     }
 
+    public void loadClick(View view) {
+        load.setProgress(0);
+        load.pauseAnimation();
+        load.playAnimation();
+
+    }
 }
